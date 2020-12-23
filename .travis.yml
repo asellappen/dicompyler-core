@@ -10,7 +10,8 @@ python:
     - 3.8
 before_install:
     - sudo apt-get install libblas-dev liblapack-dev libatlas-base-dev gfortran
-    - pip install imutils
+    - pip install imutils openblas
+     -pip install --upgrade pip setuptools wheel
     - pip install scipy
 install:
     - pip install Cython
