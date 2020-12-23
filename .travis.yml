@@ -1,16 +1,16 @@
 dist: xenial
 arch:
-    - amd64
+   #- amd64
     - ppc64le
 language: python
 python:
-    - 2.7
-    - 3.6
-    - 3.7
+   # - 2.7
+   # - 3.6
+   # - 3.7
     - 3.8
 before_install:
     - sudo apt-get install libblas-dev liblapack-dev libatlas-base-dev gfortran
-  ##  - sudo pip3 install scipy
+    - sudo pip3 install scipy
 install:
     - pip install Cython
     - pip install pillow
